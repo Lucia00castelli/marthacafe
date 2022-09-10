@@ -432,6 +432,7 @@ footer h2 {
   .header {
     width: 100%;
     justify-content: center;
+    text-decoration: none;
   }
 
   nav {
