@@ -28,7 +28,7 @@
   padding: 15px 50px;
   justify-content: flex-start;
   align-items: center;
-  text-decoration: none;
+
 }
 
 ul {
@@ -37,6 +37,7 @@ ul {
   padding-left: 30px;
   text-decoration: none;
 }
+
 
 /* PAGINA INICIO*/
 .seccion1 h2 {
@@ -434,10 +435,9 @@ footer h2 {
     justify-content: center;
   }
 
-  .header_titulo{
-    text-decoration: none;
-  }
-
+ a{
+  text-decoration: none;
+ }
   nav {
     display: none;
   }
