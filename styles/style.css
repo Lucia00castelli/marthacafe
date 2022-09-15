@@ -244,6 +244,7 @@ button:hover{
   align-items: center;
 }
 
+
 .main-menu__contenedor {
   grid-template-areas:
     "img1 img1 img2"
@@ -309,7 +310,10 @@ button:hover{
   gap: 20px;
   text-align: center;
   padding: 40px;
+  position: relative;
 }
+
+
 
 .img1 img,
 .img2 img,
@@ -343,6 +347,15 @@ button:hover{
 
 .main-recetas__contenedor H4 {
  margin-bottom: 40px;
+}
+
+.pagination{
+  justify-content: center;
+  padding: 0%;
+}
+
+.page-item{
+  border: none;
 }
 
 

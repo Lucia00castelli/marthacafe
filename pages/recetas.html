@@ -4,26 +4,36 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/style.css">
-    
+    <link rel="stylesheet" href="../styles/style.css" />
     <title>Martha cafe</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
   </head>
   <body class="recetasgrid">
-
-
-    <header class="header">
-      <h1><a href="../index.html">Martha </a></h1>
-      <nav>
-        <ul>
-          <li><a href="../index.html"> Inicio </a></li>
-          <li><a href="./nuestra historia.html"> Nuestra Historia </a></li>
-          <li><a href="./menu.html"> Menu </a></li>
-          <li><a href="./recetas.html"> Recetas </a></li>
-          <li><a href="./contacto.html">Contacto </a></li>
-        </ul>
-      </nav>
+    <header class="container-fluid">
+      <div class="row">
+      <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">Martha cafe</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="../pages/menu.html">Menu</a>
+              <a class="nav-link" href="../pages/recetas.html">Recetas</a>
+              <a class="nav-link" href="../pages/nuestra historia.html">Sobre Nosotros</a>
+              <a class="nav-link" href="../pages/contacto.html">Conocenos</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
-
 
     <section class="titulo-menu__historia">
       <h2>Recetas</h2>
@@ -34,29 +44,46 @@
         <div class="img1">
           <img src="../images/budin de banana.jpg" alt="Torta" />
           <h4>BUDIN DE BANANA</h4>
-          <button><span></span> Ver receta </button>
-
+          <button><span></span> Ver receta</button>
         </div>
         <div class="img2">
-          <img src="../images/chhescake maracuya.jpg" alt="Torta de chocolate" />
+          <img
+            src="../images/chhescake maracuya.jpg"
+            alt="Torta de chocolate"
+          />
           <h4>CHEESCAKE MARACUYA</h4>
-          <button><span></span> Ver receta </button>
-
+          <button><span></span> Ver receta</button>
         </div>
         <div class="img3">
           <img src="../images/marquise.jpg" alt="Cheescake" />
           <h4>MARQUISE</h4>
-          <button><span></span> Ver receta </button>
-
+          <button><span></span> Ver receta</button>
         </div>
         <div class="img4">
           <img src="../images/torta compartida.jpg" alt="torta oreo" />
           <h4>TARTA DE GANACHE</h4>
-          <button><span></span> Ver receta </button>
-
+          <button><span></span> Ver receta</button>
         </div>
       </div>
     </main>
+
+    <nav aria-label="Page navigation example">
+      <ul class="pagination ">
+        <li class="page-item ">
+          <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
 
     <footer class="footer">
       <div class="infocontacto">
@@ -107,7 +134,7 @@
       <div class="formulariofooter">
         <h3>Suscribite</h3>
         <p>Suscribite y accede a promos y ofertas unicas</p>
-        <input type="submit" value="Suscribirme" />
+        <button class="btn btn-light">Suscribirme</button>
       </div>
 
       <div class="redesfooter">
@@ -131,5 +158,11 @@
         />
       </div>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
