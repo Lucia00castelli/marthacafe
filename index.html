@@ -4,155 +4,137 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/style.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="./styles2/styles.css" />
     <title>Martha cafe</title>
   </head>
+
   <body class="indexgrid">
     <header class="header">
-      <h1><a href="./index.html">Martha </a></h1>
       <nav>
-        <ul>
+        <ul class="ul">
           <li><a href="./index.html"> Inicio </a></li>
+          <li><a href="./pages/menu.html"> Menu </a></li>
+          <li><a href="./pages/recetas.html"> Recetas </a></li>
+        </ul>
+
+        <a href="./index.html"
+          ><img src="./images/logo.jpg" alt="Logo del cafe" />
+        </a>
+
+        <ul class="ul">
           <li>
             <a href="./pages/nuestra historia.html"> Nuestra historia </a>
           </li>
-          <li><a href="./pages/menu.html"> Menu </a></li>
-          <li><a href="./pages/recetas.html"> Recetas </a></li>
           <li><a href="./pages/contacto.html">Contacto </a></li>
         </ul>
       </nav>
     </header>
 
     <main class="main">
-      <h2>BIENVENIDO A NUESTRO MUNDO</h2>
-      <a href="./pages/nuestra historia.html"> Conocenos</a>
+      <div class="container">
+        <h2>Bienvenidos a nuestro mundo</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit
+          similique est pariatur. Non mollitia ad debitis reiciendis recusandae
+          esse nobis voluptas vel. Perferendis voluptatibus aspernatur error
+          impedit porro autem corrupti?
+        </p>
+        <a href="./pages/nuestra historia.html"> Conocenos </a>
+      </div>
     </main>
 
-    <section class="seccion1">
-      <h2>DELEITATE CON NUESTRAS DELICIAS</h2>
-
-      <div class="contenedor">
-        <div class="contenedor_img">
-          <img src="./images/torta amarilla.jpg" alt="Tortas" />
-          <h4 class="h4">TORTAS</h4>
-        </div>
-        <div class="contenedor_img">
-          <img src="./images/porciones.jpg" alt="Porciones" />
-          <h4 class="h4">PORCIONES</h4>
-        </div>
-        <div class="contenedor_img">
-          <img src="./images/torta compartida.jpg" alt="Para el te" />
-          <h4 class="h4">PARA EL TE</h4>
-        </div>
-      </div>
-
-      <button><span></span> Ver todo el menu </button>
-
-    </section>
-
-    <section class="section2">
-      <h3>LAS RECETAS DE LA ABUELA</h3>
-      <div class="contenedor2">
-        <div class="contenedor_img2">
-          <img src="./images/budin de banana.jpg" alt="Budin de banana" />
-          <h4>BUDIN DE BANANA</h4>
-        </div>
-        <div class="contenedor_img2">
-          <img src="./images/torta matilda.jpg" alt="Torta de chocolate" />
-          <h4 >TORTA BRUCE</h4>
-        </div>
-        <div class="contenedor_img2">
-          <img src="./images/chhescake.jpg" alt="Cheescake" />
-          <h4 >CHEESCAKE</h4>
-        </div>
-      </div>
-    </section>
-
-    <section class="section3">
-      <h3>SOBRE NOSOTROS</h3>
-
-      <br />
-      <img src="" alt="" />
+    <section class="carrousel">
+      <h2>Deleitate con nuestras delicias</h2>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ut
-        suscipit, distinctio minima nobis voluptas libero aliquid facere quis
-        debitis blanditiis nihil, vero laborum aspernatur in ex eos animi est?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aperiam
+        magni inventore. Iste quod vitae minus consectetur, animi sed obcaecati
+        dolorem ea eligendi ipsum numquam voluptatem! Voluptate blanditiis
+        veniam tenetur.
       </p>
+      <div class="container">
+        <div class="carrousel__item">
+          <img src="./images/chhescake.jpg" alt="torta" />
+        </div>
+        <div class="carrousel__item">
+          <img src="./images/chhescake.jpg" alt="torta" />
+        </div>
+        <div class="carrousel__item">
+          <img src="./images/chhescake.jpg" alt="torta" />
+        </div>
+      </div>
+      <a href="#">Ver mas</a>
     </section>
 
-    <footer class="footer">
-      <div class="infocontacto">
-        <h2>Martha Cafe</h2>
-        <div class="infocontacto__ft">
-          <img
-            src="./images/foto mail.webp"
-            alt="Icono mail"
-            width="30px"
-            height="30px"
-          />
-          <h4>marthacafegmail.com</h4>
-        </div>
-        <div class="infocontacto__ft">
-          <img
-            src="./images/pagina web.png"
-            alt="logo pagina web"
-            width="40x"
-            height="20px"
-          />
-          <h4>www.marthacafe.com.ar</h4>
-        </div>
-      </div>
+    <section class="recetas">
+      <h3 class="h3">Algunas de las rectas de la abuela</h3>
 
-      <div class="Secciones">
-        <h3>Nuestras secciones</h3>
-        <ul class="linksfooter">
-          <li><a href="./index.html"> Inicio </a></li>
-          <li>
-            <a href="./pages/nuestra historia.html"> Nuestra Historia </a>
-          </li>
-          <li><a href="./pages/menu.html"> Menu </a></li>
-          <li><a href="./pages/recetas.html"> Recetas </a></li>
-          <li><a href="./pages/contacto.html">contacto </a></li>
-        </ul>
+    <div class="container">
+      <div class="receta1">
+        <img class="img1" src="./images/recetas1.webp" alt="chocotorta" />
+        <h4>¿De donde salen nuestras exquisiteces?</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+          provident consequatur laborum, distinctio quo, impedit porro nemo,
+          dolorum nobis molestias fugit officia veritatis! Ab ratione placeat
+          unde, error quod minima.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+          provident consequatur laborum, distinctio quo, impedit porro nemo,
+          dolorum nobis molestias fugit officia veritatis! Ab ratione placeat
+          unde, error quod minima. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Natus provident consequatur laborum, distinctio
+          quo, impedit porro nemo, dolorum nobis molestias fugit officia
+          veritatis! Ab ratione placeat unde, error quod minima.
+        </p>
+        <a class="a2" href="#">Ver la receta </a>
       </div>
-
-      <div class="Locales">
-        <h3>Locales</h3>
-        <ul class="nombreslocales">
-          <li>Belgrano</li>
-          <li>Palermo</li>
-          <li>Caballito</li>
-          <li>Mar del Plata</li>
-        </ul>
+      <div class="receta2">
+        <img class="img2" src="./images/chocotorta.jpg" alt="chocotorta" />
+        <h4>Chocotorta</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <a class="a2" href="#">Ver la receta </a>
       </div>
-
-      <div class="formulariofooter">
-        <h3>Suscribite</h3>
-        <p>Suscribite y accede a promos y ofertas unicas</p>
-        <input type="submit" value="Suscribirme" />
+      <div class="receta3">
+        <img class="img3" src="./images/chocotorta.jpg" alt="chocotorta" />
+        <h4>Lemon Pie</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <a class="a2" href="#">Ver la receta </a>
       </div>
+      <div class="receta4">
+        <img class="img4" src="./images/chocotorta.jpg" alt="chocotorta" />
+        <h4>Lemon Pie</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <a class="a2" href="#">Ver la receta </a>
+      </div>
+      <div class="receta5">
+        <img class="img5" src="./images/chocotorta.jpg" alt="chocotorta" />
+        <h4>Lemon Pie</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <a class="a2" href="#">Ver la receta </a>
+      </div>
+    </div>
+  </section>
 
-      <div class="redesfooter">
-        <img
-          src="./images/logo ig.png"
-          alt="Logo ig"
-          width="30px"
-          height="30px"
-        />
-        <img
-          src="./images/logo tik tok.webp"
-          alt="Logo tik tok"
-          width="30px"
-          height="30px"
-        />
-        <img
-          src="./images/logo fb.png"
-          alt="Logo facebook"
-          width="30px"
-          height="30px"
-        />
+    <footer>
+      <img class="logo" src="./images/logo.jpg" alt="logo" />
+
+      <ul class="footer-menu-container">
+        <li><a href="#">Legal</a></li>
+        <li><a href="#">Conocenos</a></li>
+        <li><a href="#">Privacidad</a></li>
+        <li><a href="#">Suscribite </a></li>
+      </ul>
+
+      <div class="redes-icons-container">
+        <i class='bx bxl-facebook-circle'></i>
+        <i class='bx bxl-instagram'></i>
+        <i class='bx bxs-edit-location'></i>
       </div>
     </footer>
+
+
     <!-- JavaScript Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"

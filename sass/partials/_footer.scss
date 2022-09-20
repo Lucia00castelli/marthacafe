@@ -1,0 +1,49 @@
+footer{
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    padding: 2rem 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @media(max-width: 601px){
+       flex-flow: wrap;
+      }
+
+    .logo{
+        height: 100px;
+        margin-bottom: 1rem;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .redes-icons-container, .footer-menu-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+        gap: 60px;
+    
+    }
+
+    i{
+        @media(max-width: 601px){
+            flex-flow: wrap;
+           }
+    }
+
+    
+
+    a{
+        color: black;
+    }
+    
+    
+    
+
+}
+
+

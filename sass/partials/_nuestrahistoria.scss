@@ -1,0 +1,44 @@
+.nuestrahistoria{
+    width:100% ;
+    height: auto;
+
+    .h33 {
+        
+            @include h2(#B5AB50);
+            font-size: 40px;
+            color: #B5AB50;
+            text-align: left;
+            margin-top: 30px;
+            margin-bottom:30px ;
+            margin-left: 10%;
+            @media(max-width: 601px){
+              flex-flow: wrap;
+              }
+    }
+
+    p{
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+        
+
+      
+
+    }
+
+    img{
+        width: 35%;
+        border-radius: 10px;
+        float: right;
+        margin-right: 10%;
+        @media(max-width: 601px){
+           flex-flow: wrap;
+           float: none;
+
+        
+        }
+
+
+}
+}

@@ -1,0 +1,477 @@
+@import url("https://fonts.googleapis.com/css2?family=Rozha+One&family=Yeseva+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+body {
+  background-color: #EBE6E4;
+}
+
+header {
+  padding: 25px;
+}
+header nav {
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+header nav img {
+  height: 150px;
+  width: 150px;
+}
+@media (max-width: 600px) {
+  header nav img {
+    width: 80px;
+    height: 80px;
+  }
+}
+header nav .ul {
+  display: flex;
+  gap: 40px;
+  font-size: 20px;
+  width: 40%;
+  justify-content: flex-start;
+  align-items: center;
+}
+header nav .ul:nth-child(1) {
+  justify-content: flex-end;
+}
+header nav .ul li a {
+  color: black;
+}
+@media (max-width: 600px) {
+  header nav .ul {
+    display: none;
+  }
+}
+
+.main {
+  background-image: url(../images/fondomain.jpg);
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+}
+@media (min-width: 601px) {
+  .main {
+    height: 70vh;
+    background-size: contain;
+    background-position-x: right;
+    background-repeat: no-repeat;
+  }
+}
+.main .container {
+  max-width: 350px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+.main .container h2 {
+  font-family: "Rozha One", serif;
+  font-size: 35px;
+  width: 70%;
+  line-height: 1em;
+  color: #B5AB50;
+}
+@media (min-width: 601px) {
+  .main .container h2 {
+    font-size: 60px;
+    width: 30%;
+  }
+}
+.main .container p {
+  font-size: 18px;
+}
+@media (min-width: 601px) {
+  .main .container p {
+    width: 450px;
+  }
+}
+.main .container a {
+  font-size: 16px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #B5AB50;
+  padding: 0.5em 1em;
+  color: white;
+  transition: all 0.2s ease;
+}
+.main .container a:hover {
+  transform: scale(105%);
+  background-color: #5c5623;
+}
+@media (min-width: 601px) {
+  .main .container a {
+    width: 250px;
+  }
+}
+@media (min-width: 601px) {
+  .main .container {
+    max-width: 1440px;
+    gap: 40px;
+  }
+}
+
+.carrousel {
+  margin: 100px 0;
+}
+.carrousel h2 {
+  font-size: 60px;
+  line-height: 1em;
+  color: #B5AB50;
+  font-family: "Rozha One", serif;
+  text-align: center;
+  font-size: 40px;
+}
+@media (max-width: 600px) {
+  .carrousel h2 {
+    font-size: 35px;
+  }
+}
+.carrousel p {
+  text-align: center;
+  margin: auto;
+  padding: 25px 15px;
+}
+@media (min-width: 601px) {
+  .carrousel p {
+    width: 50%;
+  }
+}
+.carrousel a {
+  background-color: #B5AB50;
+  width: 250px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin: auto;
+  font-size: 25px;
+  transition: all 0.2s ease;
+}
+.carrousel a:hover {
+  transform: scale(105%);
+  background-color: #5c5623;
+}
+.carrousel .container {
+  margin: 25px auto;
+  display: flex;
+  gap: 15px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+.carrousel .container .carrousel__item {
+  position: relative;
+}
+.carrousel .container .carrousel__item img {
+  width: 200px;
+  height: 100%;
+  object-fit: cover;
+}
+@media (min-width: 601px) {
+  .carrousel .container .carrousel__item img {
+    width: 500px;
+  }
+}
+.carrousel .container .carrousel__item:nth-child(1) {
+  width: 150px;
+}
+.carrousel .container .carrousel__item:nth-child(1)::after {
+  content: "";
+  border: 5px solid #B5AB50;
+  position: absolute;
+  display: block;
+  width: 350px;
+  height: 450px;
+  top: -40px;
+  left: -30px;
+}
+@media (max-width: 601px) {
+  .carrousel .container .carrousel__item:nth-child(1)::after {
+    display: none;
+  }
+}
+@media (min-width: 601px) {
+  .carrousel .container .carrousel__item:nth-child(1) {
+    width: 350px;
+  }
+}
+.carrousel .container .carrousel__item:nth-child(1) img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  opacity: 70%;
+}
+@media (min-width: 601px) {
+  .carrousel .container .carrousel__item:nth-child(1) img {
+    width: 100%;
+    opacity: 100%;
+  }
+}
+.carrousel .container .carrousel__item:nth-child(3) {
+  width: 150px;
+}
+.carrousel .container .carrousel__item:nth-child(3)::after {
+  content: "";
+  border: 5px solid #B5AB50;
+  position: absolute;
+  display: block;
+  width: 350px;
+  height: 450px;
+  top: 110px;
+  right: -30px;
+}
+@media (max-width: 601px) {
+  .carrousel .container .carrousel__item:nth-child(3)::after {
+    display: none;
+  }
+}
+@media (min-width: 601px) {
+  .carrousel .container .carrousel__item:nth-child(3) {
+    width: 350px;
+  }
+}
+.carrousel .container .carrousel__item:nth-child(3) img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  opacity: 70%;
+}
+@media (min-width: 601px) {
+  .carrousel .container .carrousel__item:nth-child(3) img {
+    width: 100%;
+    opacity: 100%;
+  }
+}
+@media (min-width: 601px) {
+  .carrousel .container {
+    margin: 100px auto;
+    justify-content: space-around;
+  }
+}
+
+.container {
+  max-width: 375px;
+}
+@media (min-width: 601px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
+.recetas {
+  padding: 100px 0;
+}
+.recetas .h3 {
+  font-size: 60px;
+  line-height: 1em;
+  color: #b5ab50;
+  font-family: "Rozha One", serif;
+  text-align: center;
+  font-size: 40px;
+  color: #b5ab50;
+  align-items: center;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .recetas .h3 {
+    font-size: 35px;
+  }
+}
+@media (max-width: 601px) {
+  .recetas .h3 {
+    flex-flow: wrap;
+  }
+}
+.recetas .container {
+  padding: 50px 0;
+  margin: auto;
+  grid-template-areas: "receta1 receta2 receta3" "receta1 receta4 receta5";
+  grid-template-columns: 2fr;
+  align-items: flex-start;
+  text-align: center;
+  display: grid;
+  width: 100%;
+  gap: 50px;
+}
+@media (max-width: 601px) {
+  .recetas .container {
+    max-width: 350px;
+    grid-template-areas: "receta1" "receta2" "receta3" "receta4" "receta5";
+    grid-template-columns: 1fr;
+    display: grid;
+    grid-auto-flow: column;
+  }
+}
+.recetas .container div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+@media (max-width: 601px) {
+  .recetas .container div {
+    flex-flow: wrap;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.recetas .container div p {
+  text-align: start;
+}
+.recetas .receta1 {
+  grid-area: receta1;
+}
+.recetas .receta1 img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+.recetas .receta2 {
+  grid-area: receta2;
+}
+.recetas .receta2 img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+.recetas .receta3 {
+  grid-area: receta3;
+}
+.recetas .receta3 img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+.recetas .receta4 {
+  grid-area: receta4;
+}
+.recetas .receta4 img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+.recetas .receta5 {
+  grid-area: receta5;
+}
+.recetas .receta5 img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+.recetas .a2 {
+  background-color: black;
+  width: 150px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 15px;
+  background-color: #b5ab50;
+  transition: all 0.2s ease;
+}
+.recetas .a2:hover {
+  transform: scale(105%);
+  background-color: #5c5623;
+}
+
+footer {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  padding: 2rem 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media (max-width: 601px) {
+  footer {
+    flex-flow: wrap;
+  }
+}
+footer .logo {
+  height: 100px;
+  margin-bottom: 1rem;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+footer .redes-icons-container, footer .footer-menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  gap: 60px;
+}
+@media (max-width: 601px) {
+  footer i {
+    flex-flow: wrap;
+  }
+}
+footer a {
+  color: black;
+}
+
+.nuestrahistoria {
+  width: 100%;
+  height: auto;
+}
+.nuestrahistoria .h33 {
+  font-size: 60px;
+  line-height: 1em;
+  color: #B5AB50;
+  font-family: "Rozha One", serif;
+  font-size: 40px;
+  color: #B5AB50;
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 10%;
+}
+@media (max-width: 600px) {
+  .nuestrahistoria .h33 {
+    font-size: 35px;
+  }
+}
+@media (max-width: 601px) {
+  .nuestrahistoria .h33 {
+    flex-flow: wrap;
+  }
+}
+.nuestrahistoria p {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+}
+.nuestrahistoria img {
+  width: 35%;
+  border-radius: 10px;
+  float: right;
+  margin-right: 10%;
+}
+@media (max-width: 601px) {
+  .nuestrahistoria img {
+    flex-flow: wrap;
+    float: none;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
