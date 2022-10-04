@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet" />
+    <meta name="descrpition" content="Pagina de una cafeteria" />
+    <meta name="keywords" content="recetas, menus, tortas, cafes" />
     <link rel="stylesheet" href="./styles2/styles.css" />
     <title>Martha cafe</title>
   </head>
@@ -18,9 +21,10 @@
           <li><a href="./pages/recetas.html"> Recetas </a></li>
         </ul>
 
-        <a href="./index.html"
-          ><img src="./images/logo.jpg" alt="Logo del cafe" />
-        </a>
+        <h1 >
+          <a href="./index.html"  class="logo"> Martha Cafe</a>
+     
+        </h1>
 
         <ul class="ul">
           <li>
@@ -28,6 +32,21 @@
           </li>
           <li><a href="./pages/contacto.html">Contacto </a></li>
         </ul>
+      </nav>
+      
+      <label for="menu-btn"><i class='bx bx-menu'></i></label>
+      <input type="checkbox" id="menu-btn"/>
+
+      <nav class="menu-mobile">
+        <ul class="ul-mobile">
+          <li><a href="./index.html"> Inicio </a></li>
+          <li><a href="./pages/menu.html"> Menu </a></li>
+          <li><a href="./pages/recetas.html"> Recetas </a></li>
+          <li><a href="./pages/nuestra historia.html"> Nuestra historia </a></li>
+          <li><a href="./pages/contacto.html">Contacto </a></li>
+        </ul>
+
+
       </nav>
     </header>
 
@@ -69,71 +88,78 @@
     <section class="recetas">
       <h3 class="h3">Algunas de las rectas de la abuela</h3>
 
-    <div class="container">
-      <div class="receta1">
-        <img class="img1" src="./images/recetas1.webp" alt="chocotorta" />
-        <h4>¿De donde salen nuestras exquisiteces?</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-          provident consequatur laborum, distinctio quo, impedit porro nemo,
-          dolorum nobis molestias fugit officia veritatis! Ab ratione placeat
-          unde, error quod minima.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-          provident consequatur laborum, distinctio quo, impedit porro nemo,
-          dolorum nobis molestias fugit officia veritatis! Ab ratione placeat
-          unde, error quod minima. Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Natus provident consequatur laborum, distinctio
-          quo, impedit porro nemo, dolorum nobis molestias fugit officia
-          veritatis! Ab ratione placeat unde, error quod minima.
-        </p>
-        <a class="a2" href="#">Ver la receta </a>
+      <div class="container">
+        <div class="receta1">
+          <img class="img1" src="./images/recetas1.webp" alt="chocotorta" />
+          <h4>¿De donde salen nuestras exquisiteces?</h4>
+          <p class="parrafo1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+            provident consequatur laborum, distinctio quo, impedit porro nemo,
+            dolorum nobis molestias fugit officia veritatis! Ab ratione placeat
+            unde, error quod minima.
+          </p>
+          <p class="parrafo2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+            provident consequatur laborum, distinctio quo, impedit porro nemo,
+            dolorum nobis molestias fugit officia veritatis! Ab ratione placeat
+            unde, error quod minima. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Natus provident consequatur laborum, distinctio
+            quo, impedit porro nemo, dolorum nobis molestias fugit officia
+            veritatis! Ab ratione placeat unde, error quod minima.
+          </p>
+          <a class="a2" href="#">Ver la receta </a>
+        </div>
+        <div class="receta2">
+          <img class="img2" src="./images/chocotorta.jpg" alt="chocotorta" />
+          <h4>Chocotorta</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <a class="a2" href="#">Ver la receta </a>
+        </div>
+        <div class="receta3">
+          <img class="img3" src="./images/chocotorta.jpg" alt="chocotorta" />
+          <h4>Lemon Pie</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <a class="a2" href="#">Ver la receta </a>
+        </div>
+        <div class="receta4">
+          <img class="img4" src="./images/chocotorta.jpg" alt="chocotorta" />
+          <h4>Lemon Pie</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <a class="a2" href="#">Ver la receta </a>
+        </div>
+        <div class="receta5">
+          <img class="img5" src="./images/chocotorta.jpg" alt="chocotorta" />
+          <h4>Lemon Pie</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <a class="a2" href="#">Ver la receta </a>
+        </div>
       </div>
-      <div class="receta2">
-        <img class="img2" src="./images/chocotorta.jpg" alt="chocotorta" />
-        <h4>Chocotorta</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <a class="a2" href="#">Ver la receta </a>
-      </div>
-      <div class="receta3">
-        <img class="img3" src="./images/chocotorta.jpg" alt="chocotorta" />
-        <h4>Lemon Pie</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <a class="a2" href="#">Ver la receta </a>
-      </div>
-      <div class="receta4">
-        <img class="img4" src="./images/chocotorta.jpg" alt="chocotorta" />
-        <h4>Lemon Pie</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <a class="a2" href="#">Ver la receta </a>
-      </div>
-      <div class="receta5">
-        <img class="img5" src="./images/chocotorta.jpg" alt="chocotorta" />
-        <h4>Lemon Pie</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <a class="a2" href="#">Ver la receta </a>
-      </div>
-    </div>
-  </section>
+    </section>
 
-    <footer>
-      <img class="logo" src="./images/logo.jpg" alt="logo" />
+    <footer class="footer">
+      <div class="container">
+        <div class="footer_logo">
+          <img src="./images/logo.jpg" alt="logo" />
+        </div>
 
-      <ul class="footer-menu-container">
-        <li><a href="#">Legal</a></li>
-        <li><a href="#">Conocenos</a></li>
-        <li><a href="#">Privacidad</a></li>
-        <li><a href="#">Suscribite </a></li>
-      </ul>
+        <div class="footer__contacto">
+          <h3>Contactanos</h3>
+          <div class="social__icons">
+            <i class="bx bxl-instagram-alt"></i>
+            <i class="bx bxl-facebook-square"></i>
+            <i class="bx bxs-map"></i>
+          </div>
+        </div>
 
-      <div class="redes-icons-container">
-        <i class='bx bxl-facebook-circle'></i>
-        <i class='bx bxl-instagram'></i>
-        <i class='bx bxs-edit-location'></i>
+        <div class="footer__newsletter">
+          <h3>Enterate de nuestras novedades</h3>
+          <div class="footer__form">
+            <input type="text" />
+            <button>Suscribite</button>
+          </div>
+        </div>
       </div>
     </footer>
-
 
     <!-- JavaScript Bundle with Popper -->
     <script

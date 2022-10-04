@@ -16,6 +16,25 @@ body {
 header {
   padding: 25px;
 }
+header .bx {
+  display: none;
+}
+header #menu-btn {
+  display: none;
+}
+header .menu-mobile {
+  display: none;
+}
+header .logo {
+  text-indent: -99999px;
+  width: 100px;
+  height: 100px;
+  background: url(../../images/logo.jpg);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center left;
+  display: block;
+}
 header nav {
   width: 100%;
   display: flex;
@@ -50,6 +69,55 @@ header nav .ul li a {
 @media (max-width: 600px) {
   header nav .ul {
     display: none;
+  }
+}
+@media (max-width: 600px) {
+  header {
+    padding: 0.5em 1em;
+    align-items: center;
+    display: flex;
+    position: relative;
+  }
+  header .logo {
+    text-indent: -99999px;
+    width: 60px;
+    height: 60px;
+    background: url(../images/logo.jpg);
+    background-size: 60px;
+    background-repeat: no-repeat;
+    background-position: center left;
+    display: block;
+  }
+  header .bx {
+    display: block;
+    font-size: 40px;
+    color: #B5AB50;
+  }
+  header #menu-btn {
+    display: none;
+  }
+  header #menu-btn:checked ~ .menu-mobile {
+    right: -50%;
+  }
+  header .menu-mobile {
+    display: block;
+    position: absolute;
+    background-color: #ebe6e4;
+    top: 60px;
+    right: 0;
+    width: 50%;
+    transition: all 0.5s ease;
+  }
+  header .menu-mobile .ul-mobile {
+    padding: 1em;
+    gap: 1em;
+    display: flex;
+    flex-direction: column;
+  }
+  header .menu-mobile .ul-mobile li a {
+    font-size: 1.2em;
+    color: #B5AB50;
+    font-family: "Rozha One", serif;
   }
 }
 
@@ -336,7 +404,14 @@ header nav .ul li a {
 .recetas .receta1 {
   grid-area: receta1;
 }
-.recetas .receta1 img {
+.recetas .receta1 .parrafo1, .recetas .receta1 .parrafo2 {
+  font-size: 18px;
+  color: black;
+}
+.recetas .receta1 .parrafo2 {
+  font-weight: bold;
+}
+.recetas img {
   width: 100%;
   height: 50%;
   object-fit: cover;
@@ -390,43 +465,95 @@ header nav .ul li a {
   background-color: #5c5623;
 }
 
-footer {
-  width: 100%;
-  position: relative;
-  bottom: 0;
-  left: 0;
-  padding: 2rem 8%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-@media (max-width: 601px) {
+@media (max-width: 600px) {
   footer {
-    flex-flow: wrap;
+    display: flex;
+  }
+  footer .container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+  }
+  footer .container .footer_logo img {
+    width: 60px;
+  }
+  footer .container .footer__contacto .social__icons {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+  footer .container .footer__contacto .social__icons .bx {
+    display: block;
+    color: #b5ab50;
+    font-size: 30px;
+  }
+  footer .container .footer__newsletter {
+    text-align: center;
+  }
+  footer .container .footer__newsletter .footer__form {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  footer .container .footer__newsletter .footer__form input {
+    border: none;
+    height: 30px;
+    padding: 1em;
+  }
+  footer .container .footer__newsletter .footer__form button {
+    background-color: #b5ab50;
+    border: none;
+    color: white;
+    height: 30px;
+    text-transform: uppercase;
+    border-radius: 5px;
   }
 }
-footer .logo {
-  height: 100px;
-  margin-bottom: 1rem;
-  justify-content: center;
-  margin-bottom: 30px;
+.footer {
+  padding: 100px 0;
 }
-footer .redes-icons-container, footer .footer-menu-container {
+.footer .container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-bottom: 1rem;
-  gap: 60px;
+  justify-content: space-between;
+  margin: auto;
 }
-@media (max-width: 601px) {
-  footer i {
-    flex-flow: wrap;
-  }
+.footer .container .footer_logo img {
+  width: 100px;
 }
-footer a {
-  color: black;
+.footer .container .footer__contacto .social__icons {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  font-size: 30px;
+}
+.footer .container .footer__contacto .social__icons .bx {
+  display: block;
+  color: #b5ab50;
+}
+.footer .container .footer__newsletter {
+  text-align: center;
+}
+.footer .container .footer__newsletter .footer__form {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+.footer .container .footer__newsletter .footer__form input {
+  border: none;
+  height: 30px;
+  padding: 1em;
+  width: 200px;
+}
+.footer .container .footer__newsletter .footer__form button {
+  background-color: #b5ab50;
+  border: none;
+  color: white;
+  height: 30px;
+  text-transform: uppercase;
+  width: 200px;
 }
 
 .nuestrahistoria {
@@ -471,6 +598,102 @@ footer a {
   .nuestrahistoria img {
     flex-flow: wrap;
     float: none;
+  }
+}
+
+.menu {
+  margin: 100px 0;
+  background-image: url(../../images/budin.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+}
+.menu .container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  margin: auto;
+}
+
+.menu__section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  justify-content: space-between;
+}
+.menu__section h3 {
+  font-size: 50px;
+  font-weight: 100;
+  text-align: start;
+  text-transform: uppercase;
+}
+
+.menu__item {
+  font-size: 21px;
+}
+.menu__item h4 {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.menu__item p {
+  display: flex;
+  justify-content: space-between;
+  font-size: 22px;
+  font-weight: 100;
+}
+
+.menu:nth-child(2n+1) {
+  background-image: url(../../images/budin2.jpeg);
+  background-position: center;
+}
+.menu:nth-child(2n+1) .container {
+  justify-content: flex-start;
+}
+
+@media (max-width: 600px) {
+  .menu {
+    background-color: #EBE6E4;
+    overflow: hidden;
+    margin: 0%;
+    background-image: url(../../images/budin.jpeg);
+    background-position-y: center;
+    background-position-x: 0%;
+    position: relative;
+  }
+  .menu h3 {
+    font-size: 28px;
+  }
+  .menu .container {
+    max-width: 350px;
+  }
+  .menu::before {
+    content: "";
+    display: block;
+    height: 1500px;
+    width: 100%;
+    background-color: #EBE6E4;
+    position: absolute;
+    z-index: 0;
+    opacity: 0.7;
+    top: 0%;
+  }
+  .menu__section {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+  .menu__item {
+    width: 100%;
+  }
+  .menu__item h4 {
+    font-size: 18px;
+  }
+  .menu__item p {
+    font-size: 16px;
   }
 }
 

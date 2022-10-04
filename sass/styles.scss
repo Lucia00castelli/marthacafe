@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rozha+One&family=Yeseva+One&display=swap');
 
+@import"partials/variables";
+@import"partials/maps";
 @import "mixins/mixins";
 @import "partials/reset";
 @import "partials/header";
@@ -9,6 +11,7 @@
 @import"partials/articulos";
 @import"partials/footer";
 @import"partials/nuestrahistoria";
+@import "partials/menu";
 
 
 
