@@ -87,17 +87,27 @@ footer{
       }
       .footer__newsletter {
         text-align: center;
+        
         .footer__form {
           margin-top: 10px;
           display: flex;
           gap: 10px;
+          @media (max-width: 601px) {
+            align-self: center;
+           }
           input {
             border: none;
             height: 30px;
             padding: 1em;
             width: 200px;
+            @media (max-width: 601px) {
+              align-self: center;
+             }
           }
           button {
+            @media (max-width: 601px) {
+              align-self: center;
+             }
             background-color: #b5ab50;
             border: none;
             color: white;

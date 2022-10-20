@@ -69,6 +69,7 @@ header {
   @media(max-width: 600px){
     padding: 0.5em 1em;
     align-items: center;
+    
     .logo {
       text-indent: -99999px;
       width: 60px;
@@ -91,7 +92,7 @@ header {
     #menu-btn{
       display: none;
       &:checked ~ .menu-mobile{
-     right: -50%;
+     left: -50%;
       }
     }
   
@@ -109,6 +110,7 @@ header {
        gap: 1em;
        display: flex;
        flex-direction: column;
+       
        li{
         a{
           font-size: 1.2em;
