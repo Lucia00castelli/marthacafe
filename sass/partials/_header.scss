@@ -69,6 +69,7 @@ header {
   @media(max-width: 600px){
     padding: 0.5em 1em;
     align-items: center;
+    transition: all 0.5s ease;
     
     .logo {
       text-indent: -99999px;
@@ -89,11 +90,9 @@ header {
       color: map-get($colores, primary-color );
     }
   
-    #menu-btn{
-      display: none;
-      &:checked ~ .menu-mobile{
-     left: -50%;
-      }
+    #menu-btn:checked ~ .menu-mobile{
+      left: -50%;
+       }
     }
   
     .menu-mobile{
@@ -122,4 +121,4 @@ header {
     }
    
   }
-}
+

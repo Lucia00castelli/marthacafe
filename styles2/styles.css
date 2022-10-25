@@ -75,6 +75,7 @@ header nav .ul li a {
   header {
     padding: 0.5em 1em;
     align-items: center;
+    transition: all 0.5s ease;
     display: flex;
     position: relative;
   }
@@ -93,32 +94,29 @@ header nav .ul li a {
     font-size: 40px;
     color: #B5AB50;
   }
-  header #menu-btn {
-    display: none;
-  }
   header #menu-btn:checked ~ .menu-mobile {
     left: -50%;
   }
-  header .menu-mobile {
-    display: block;
-    position: absolute;
-    background-color: #ebe6e4;
-    top: 60px;
-    right: 0;
-    width: 50%;
-    transition: all 0.5s ease;
-  }
-  header .menu-mobile .ul-mobile {
-    padding: 1em;
-    gap: 1em;
-    display: flex;
-    flex-direction: column;
-  }
-  header .menu-mobile .ul-mobile li a {
-    font-size: 1.2em;
-    color: #B5AB50;
-    font-family: "Rozha One", serif;
-  }
+}
+header .menu-mobile {
+  display: block;
+  position: absolute;
+  background-color: #ebe6e4;
+  top: 60px;
+  right: 0;
+  width: 50%;
+  transition: all 0.5s ease;
+}
+header .menu-mobile .ul-mobile {
+  padding: 1em;
+  gap: 1em;
+  display: flex;
+  flex-direction: column;
+}
+header .menu-mobile .ul-mobile li a {
+  font-size: 1.2em;
+  color: #B5AB50;
+  font-family: "Rozha One", serif;
 }
 
 .main {
