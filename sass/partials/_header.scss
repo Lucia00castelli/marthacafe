@@ -80,6 +80,7 @@ header {
       background-repeat: no-repeat;
       background-position: center left;
       display: block;
+      margin-bottom: 20px;
     }
  
     display: flex;
@@ -91,7 +92,7 @@ header {
     }
   
     #menu-btn:checked ~ .menu-mobile{
-      left: -50%;
+      left: 0%;
        }
     }
   
@@ -99,8 +100,8 @@ header {
       display: block;
       position: absolute;
       background-color: map-get($colores, secondary-color );
-      top: 60px;
-      right: 0;
+      top: 70px;
+      left: -50%;
       width: 50%;
       transition: all 0.5s ease;
 
@@ -121,4 +122,5 @@ header {
     }
    
   }
+
 
